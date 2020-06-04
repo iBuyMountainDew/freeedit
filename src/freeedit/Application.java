@@ -37,7 +37,16 @@ public class Application extends JFrame implements ActionListener {
      * Create the application.
      */
     public Application() {
+        f = new JFrame("FreeEdit");
+        f.setIconImage(Toolkit.getDefaultToolkit().getImage(this.getClass().getResource("/icons/freeedit-icon.png")));
+        f.setBounds(100, 100, 450, 300);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
+        JMenuBar jmb = new JMenuBar();
+        f.setJMenuBar(jmb);
+        
+        JMenu jmFile = new JMenu("File");
+        jmb.add(jmFile);
     }
 
     /**
