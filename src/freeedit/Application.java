@@ -33,4 +33,17 @@ public class Application extends JFrame implements ActionListener {
         });
     }
 
+    /**
+     * Create the application.
+     */
+    public Application() {
+        
+    }
+
+    /**
+     * Create the "actionPerformed()" method.
+     */
+    public void actionPerformed(ActionEvent e) {
+    }
+
 }
